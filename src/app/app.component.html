@@ -1,0 +1,1 @@
+<div class="app-shell"><div class="header"><h2>Schedule App</h2><div><a routerLink="/schedule" *ngIf="auth.isLoggedIn()">Расписание</a><a routerLink="/login" *ngIf="!auth.isLoggedIn()">Вход</a><a routerLink="/register" *ngIf="!auth.isLoggedIn()">Регистрация</a><button *ngIf="auth.isLoggedIn()" (click)="logout()">Выйти</button></div></div><router-outlet></router-outlet></div>
