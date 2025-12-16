@@ -1,0 +1,1 @@
+export interface Lesson { id?: string; type: string; teacher: string; auditorium: string; school: string; address?: string; class: string; day: string; start: string; end: string; course: string; }
