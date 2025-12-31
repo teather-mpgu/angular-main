@@ -1,0 +1,25 @@
+<h3>Вход</h3>
+
+<form (ngSubmit)="submit()" #f="ngForm">
+
+  <div class="form-row">
+    <label>Логин</label>
+    <input [(ngModel)]="username" name="username" required />
+  </div>
+
+  <div class="form-row">
+    <label>Пароль</label>
+    <input type="password" [(ngModel)]="password" name="password" required />
+  </div>
+
+  <div class="form-row">
+    <button type="submit">Войти</button>
+  </div>
+
+  <div *ngIf="error" class="small" style="color:red">{{error}}</div>
+
+  <div class="small" style="margin-top:8px;">
+    Специальные данные: логин <code>admin</code>, пароль <code>secret</code>
+  </div>
+
+</form>
